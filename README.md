@@ -1,2 +1,2 @@
 # nature
-Diseño de Web de Nature
+Diseño Web de Nature
