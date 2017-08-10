@@ -1,0 +1,16 @@
+/* HEADER */
+.barra {
+  width: 100%;
+  background: red;
+  display: block;
+  height: 10px;
+}
+
+.barra div {
+  background: blue;
+  width: 33.3%;
+  float: left;
+  height: 100%;
+}
+
+/* HEADER */

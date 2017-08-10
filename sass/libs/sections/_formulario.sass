@@ -1,0 +1,63 @@
+/* FORMULARIO */
+#cita
+	@extend .global
+	height: auto
+	background: $color_gray_2
+	h2
+		color: #fff
+		margin-bottom: 0px	
+		text-align: center
+		font-weight: 100
+	p
+		text-align: center
+		color: #fff
+		padding-top: 1rem
+		font-weight: 100
+	form
+		width: 100%
+		padding: 2rem 0
+		float: left
+		input
+			background: $color_gray_3
+			font-size: 17px
+			color: #fff
+			font-weight: 100
+			padding: 0 1rem
+			box-sizing: border-box
+		select
+			font-size: 17px
+			option
+				text-transform: uppercase !important
+		label
+			font-size: 17px
+			text-transform: uppercase
+			color: #fff
+		button
+			display: inline-block
+			text-align: center
+			background-color: $color-green
+			box-shadow: 0 0 0
+		span.caret
+			color: #fff
+			z-index: 1 !important
+			right: 10px !important
+
+#iso
+	@extend .global
+	height: auto
+	padding: 5rem 0
+	.col
+		.col
+			position: relative
+			p
+				float: left
+				font-size: 19px
+				padding-left: 1rem
+				color: $color_gray_2 
+				margin-top: 40px
+				height: 123px
+				font-weight: 100
+			&:nth-child(1)  
+				border-right: 1px solid $color_gray_2
+
+/* FORMULARIO */

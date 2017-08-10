@@ -1,0 +1,70 @@
+/* PRODUCTOS */
+#productos
+	@extend .global
+	height: auto
+	h2
+		color: $color_orange
+		margin-bottom: 0px 
+	h2.alter
+		font-weight: 100
+		color: $color_gray_2
+		text-transform: initial
+		margin-bottom: 2rem
+	.container 
+		position: relative
+		>a
+			background-color: $color_orange
+			border-radius: 1rem
+			font-size: 14px
+			height: 35px
+			line-height: 35px
+			display: inline-block
+			text-transform: initial 
+			margin: 0.5rem 0
+			box-shadow: initial 
+			position: absolute
+			left: 50%
+			top: -25px
+			@include translate(-50%,0)
+
+	#productos_carousel
+		border: 1px solid $color_gray_2
+		border-radius: 4rem
+		padding: 4rem 
+		
+		.item
+			text-align: center
+			.etiqueta
+				display: block
+				color: $color_gray_2
+				font-size: 12px
+			h4
+				margin: 0
+				color: $color_gray_3
+				padding: 0.3rem 0 
+			.precio
+				color: $color_orange
+			a
+				background-color: $color_orange
+				border-radius: 1rem
+				font-size: 14px
+				height: 25px
+				line-height: 25px
+				display: inline-block
+				text-transform: initial 
+				margin: 0.5rem 0
+				box-shadow: initial 
+				font-style: italic
+#cherry
+	@extend .global
+	height: auto
+	padding: 6rem 0
+	text-align: center
+	h2
+		text-align: center
+		color: $color_green
+		font-weight: 100
+		text-transform: initial
+		font-size: 30pt
+
+/* PRODUCTOS */

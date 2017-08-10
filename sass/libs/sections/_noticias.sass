@@ -1,0 +1,36 @@
+/* NOTICIAS */
+#noticias
+	@extend .global
+	height: auto
+	h2
+		color: $color_orange
+		margin-bottom: 0px
+	.item
+		.cont
+			position: relative
+			bottom: 45px
+			.cont_enlace
+				text-align: right
+				height: 40px
+				padding: 0 1rem
+				a
+					background-color: $color_orange
+					border-radius: 1rem
+					font-size: 14px
+					height: 25px
+					line-height: 25px
+					display: inline-block
+					text-transform: initial
+
+			.cont_info
+				background: $color_gray
+				transition: 0.3s all
+				h6
+					margin: 0
+					padding: 1rem
+					color: $color_gray_3
+					font-weight: 100
+		&:hover
+			.cont_info
+				background: $color_gray_1
+/* NOTICIAS */
