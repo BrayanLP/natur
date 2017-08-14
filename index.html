@@ -32,6 +32,13 @@
 			</li>
 		</ul>
 	</nav>
+	<div class="redes flotante-right">
+		<ul>
+			<li><span class="fa fa-facebook-official"></span></li>
+			<li><span class="fa fa-instagram"></span></li>
+			<li><span class="fa fa-youtube-play"></span></li>
+		</ul>
+	</div>
 	<!-- SLIDER -->
 	<section id="slider">
 		<div id="slider_carousel" class="owl-carousel owl-theme">
@@ -346,13 +353,18 @@
 			<div class="container">
 				<div class="col l4 m6 s12 xl4">
 					<img width="250" src="image/logo natur-01.png">
-					<div class="">
+					<div class="info">
 						<ul>
 							<li>
-								999-999-999
+								<span class="fa fa-phone-square"></span> 
+								999 999 999 /
+								999 999 999 /
+								999 999 999
+
 							</li>
 							<li>
-								Direccion
+								<span class="fa fa-map-marker"></span> 
+								Tomas Ramwey 930 - Magdalena del Mar
 							</li>
 						</ul>
 					</div>
@@ -414,7 +426,8 @@
 				<div class="redes">
 					<ul>
 						<li><span class="fa fa-facebook-official"></span></li>
-						<li>instagram</li>
+						<li><span class="fa fa-instagram"></span></li>
+						<li><span class="fa fa-youtube-play"></span></li>
 					</ul>
 				</div>
 			</div>
@@ -436,16 +449,23 @@
 		var marker;
 
 		function initMap() {
+			var pos = {lat: 59.325, lng: 18.070};
 			var map = new google.maps.Map(document.getElementById('mapa'), {
 				zoom: 13,
-				center: {lat: 59.325, lng: 18.070}
+				center: pos
 			});
-
+			var image = {
+		 		url: 'image/location.svg', 
+			    anchor: new google.maps.Point(25,50),
+	        	scaledSize: new google.maps.Size(50,50)
+			};
+ 
 			marker = new google.maps.Marker({
 				map: map,
-				draggable: true,
+				draggable: false,
 				animation: google.maps.Animation.DROP,
-				position: {lat: 59.327, lng: 18.067}
+				position: pos,
+				icon: image
 			});
 			marker.addListener('click', toggleBounce);
 		}

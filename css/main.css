@@ -396,11 +396,15 @@ nav {
     display: block; }
   #footer form label.active {
     color: #fff; }
-  #footer .redes {
-    width: 100%;
-    text-align: center; }
-    #footer .redes ul li {
-      display: inline-block; }
+  #footer hr {
+    margin-bottom: 0.5rem; }
+  #footer .info ul li {
+    color: #fff;
+    padding: 0.5rem 0;
+    font-weight: 100; }
+    #footer .info ul li span {
+      padding-right: 0.5rem;
+      color: #fff; }
   #footer .copy {
     background-color: #9ebf88;
     padding: 0.5rem 0;
@@ -408,6 +412,24 @@ nav {
     color: #fff;
     font-size: 13px;
     font-weight: 100; }
+
+.redes {
+  width: 100%;
+  text-align: center; }
+  .redes ul {
+    margin-bottom: 0.5rem; }
+    .redes ul li {
+      display: inline-block;
+      padding: 0 0.3rem; }
+      .redes ul li span {
+        font-size: 20px !important;
+        color: #fff; }
+  .redes.flotante-right {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 9;
+    width: 100px; }
 
 hr {
   float: left;

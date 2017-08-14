@@ -55,7 +55,7 @@ $( document ).ready(function() {
 
     function initCarousel(){
         $("#slider_carousel").owlCarousel({
-            // autoPlay: 3000,
+            autoPlay: 3000,
             navigation : false,
             slideSpeed : 300,
             paginationSpeed : 400,
@@ -71,7 +71,7 @@ $( document ).ready(function() {
         });
 
         $("#noticias_carousel").owlCarousel({ 
-            // autoPlay: 3000, //Set AutoPlay to 3 seconds 
+            autoPlay: 3000, //Set AutoPlay to 3 seconds 
             items : 3,
             itemsDesktop : [1199,3],
             itemsDesktopSmall : [979,3],
@@ -80,7 +80,7 @@ $( document ).ready(function() {
         });
 
         $("#productos_carousel").owlCarousel({ 
-            // autoPlay: 3000, //Set AutoPlay to 3 seconds 
+            autoPlay: 3000, //Set AutoPlay to 3 seconds 
             items : 5,
             itemsDesktop : [1199,5],
             itemsDesktopSmall : [979,4],
